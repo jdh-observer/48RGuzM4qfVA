@@ -20,6 +20,8 @@ jobs:
           functions: 'checkcitation,checkoutput,checkhtml,checkjavascript,checktags,checkurls'
           output_md: 'report.md'
       # Use the output from the `preflight` step
+      - name: markdwonlint
+        uses: DavidAnson/markdownlint-cli2-action@v13
       - name: Use the output
         run: echo "Notebook path ${{ steps.preflight.outputs.notebook_path }} - workspace ${{ steps.preflight.outputs.workspace }}"
       - name: commit changes
