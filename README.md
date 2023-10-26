@@ -1,60 +1,8 @@
-# Journal of Digital History Author's Repository
+# Abstract
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/C2DH/template_repo_JDH/main?filepath=author_guideline_template.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jdh-observer/48RGuzM4qfVA/main?filepath=article.ipynb)
 
-This repository serves as a resource for authors submitting articles to the [Journal of Digital History](https://journalofdigitalhistory.org).
-It contains a Jupyter notebook that provides an example and a simple structure that can be used to write articles for the journal.
-The repository also includes a `preflight`github action that can be automatically triggered on commit, but by default, it is set to `workflow_dispatch`and actionable from the `actions` page on GitHub.
-The preflight action generates a report within the repository that contains information about the adherence of the article to the submission guidelines.
+In this article we propose a methodology and a tool for exploring visual collections, based on the interrelations of historical and iconographic connections, through the use of interactive storytelling. Such methodology is strongly inspired by the work of the art historian Aby Warburg and, most especifically, by his Atlas Mnemosyne project; in this line, we propose a way of using an open source, bilingual, JavaScript library called Aventura.js to create interactive iconographic panels connected by hypertextual connections and interpretations. Following the structure of the Journal, the article is organized in three complementary layers: the narrative layer of the article presents the context and the epistemological principles originally proposed by Warburg on his Atlas Mnemosyne project at the beginning of the XX century, and also reflects on how to expand Warburg's strategies on new ways by using digital tools. We discuss the need to develop specific tools to visualize qualitative data in image corpuses in humanities and social sciences. The hermeneutic layer of the article presents the development of Aventura.js as an electronic literature library, and its repurposing as a tool for visual digital scholarship. Subsequently we propose how this programming library can be used to create interactive exploratory panels that follow the spirit and extend the meaning possibilities of the Atlas Mnemosyne strategy. Concretely, panels organized in a 2D feature space according to categories related to the persistence, or survival, of iconographic motifs in collective memory, but, additionally, organized in a hipertextual, narrative z-dimension. As a case study that uses our methodology and tool, we provide an example dataset consisting in a collection of images that are iconographically related to the figure of the “Carguero” (Man carrier), a typical character of the 19th century Colombian visual culture. We will show how focusing attention on figures, characters or iconographic details (instead of authors, works or genres) by means of data filtering, visualization, and narrativization, allows a better understanding of the images' trajectories through different visual regimes, geographical spaces and historical periods. With this dataset, we develop all the steps involved in the design of an Atlas containing multiple interactive panels: the creation of a collection, the annotation of the images, the automation of montage and interacivity, the construction of a narrative space through the use of hypertextextual paths, and the final design decisions. Additionally we critically discuss the reach and limitations of this methodology and tool and possible further developments.
 
-## Contents
-
-`author_guideline_template.ipynb` - This Jupyter notebook provides an example and a simple structure that authors can use to write articles for the Journal of Digital History.
-
-`.github/workflows/github-actions-preflight.yml` - This workflow file contains the preflight action that can be triggered automatically on commit or manually using the workflow_dispatch event to check that the article respects the Journal guidelines.
-
-The preflight action generates or updates a report markdown file in the repository that provides information about the adherence of the article to the submission guidelines, usually named `report.md`
-
-`requirements.txt` - stores information about all the libraries, modules, and packages in itself that are used while developing a particular project.
-
-`runtime.txt` - specify the version of the runtime (e.g. the version of Python ). Have python-x.y in runtime.txt to run the repository with Python version x.y
-
-
-## Getting Started
-
-This repository it's a _template_, that is, it can be used as a starting point for new repositories.
-On GitHub.com:
-
-1. navigate to the main page of the repository.
-2. Above the file list, click Use this template.
-3. Select Create a new repository.
-4. Type a name for your new repository, and an optional description.
-5. Click Create repository from template.
-
-Please follow the rest of the documentation on [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) to understand how to create a new repository from this template.
-
-Use the example notebook as a template to write your article. You can modify the notebook to suit your needs and add your content.
-
-## Preflight Action
-
-To check if the article respects the Guidelines, we decided to create a `preflight` GitHub action that can be triggered automatically on commit - or manually using the `workflow_dispatch` event. The action is triggered by the `github-actions-preflight.yml` file in the `.github/workflows` folder.
-By default, the preflight action is set to `workflow_dispatch`, which means you can manually trigger it by going to the "Actions" tab in the repository, selecting the "Preflight" workflow, and clicking the "Run workflow" button.
-The preflight action will generate a report in the repository that provides information about the adherence of your article to the submission guidelines.
-
-## MyBinder
-
-The repository also contains a `requirements.txt` and a `runtime.txt` file that can be used to create a MyBinder environment. Check: https://mybinder.readthedocs.io/en/latest/using/config_files.html#preparing-a-repository-for-binder
-The MyBinder environment can be used to run the example notebook to test that the code runs smoothly. 
-
-## Contribution Guidelines
-
-We welcome contributions to this repository that aim to improve the example notebook, the preflight action, or the overall workflow for authors submitting articles to the Journal of Digital History. Just contact us or open an issue.
-
-## License
-
-Copyright (C) 2023 university of Luxembourg.
-This program is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
-This program is distributed in the hope that it will be useful, but without any warranty; without even the implied warranty of merchantability or fitness for a particular purpose. See the GNU Affero General Public License for more details.
-You should have received a copy of the GNU Affero General Public License along with this program. If not, see <https://www.gnu.org/licenses/>.
-
-We hope this repository and the provided example notebook are helpful for authors submitting articles to the Journal of Digital History. If you have any questions, feedback, or suggestions, please feel free to open an issue or contact us. Thank you for your contribution!
+# Keywords
+Aby Warburg, digital humanities, visual studies, digital art history, cultural history, iconography, interaction design
