@@ -468,7 +468,7 @@ Following all the steps explained before, we designed a JavaScript object that d
 
 ```python tags=["figure-observable-*"]
 # Process the scenes and render the interactive atlas (it might a couple of seconds to render)
-embed('@aventuraworkspace/interactive_atlas',
+embed('@aventura-interactiva-ws/interactive_carguero_atlas',
       cells=['panelContainer', 'processedScenes'],
       inputs={'csvString': data_csv, 'scenes': scenes}
      )
