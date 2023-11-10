@@ -147,7 +147,7 @@ from observable_jupyter import embed
 
 ```python tags=["hermeneutics"]
 # Load data set
-data_path = "./data/CargeroData.csv"
+data_path = "./data/CargueroData.csv"
 data = pd.read_csv(data_path)
 data_csv = data.to_csv(index=False)
 data.head()
