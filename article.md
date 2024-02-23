@@ -6,7 +6,7 @@ jupyter:
       extension: .md
       format_name: markdown
       format_version: '1.3'
-      jupytext_version: 1.14.4
+      jupytext_version: 1.16.1
   kernelspec:
     display_name: Python 3 (ipykernel)
     language: python
@@ -67,9 +67,21 @@ This article is the result of an interdisciplinary collaboration, built upon dif
 
 The Atlas Mnemosyne is the unfinished project Aby Warburg worked on in the last years of his life (<cite data-cite="7299034/5SBJCW9X"></cite>). It was a device that visually stored and displayed central aspects of Western visual memory. In Warburg's words, the Atlas was an instrument of "orientation" which, by exhibiting "iconic materials" and their visual relationships, allowed to "illustrate" the "process" of how the values of expression of "life in motion" coined in Antiquity were incorporated in the Renaissance (<cite data-cite="7299034/5SBJCW9X"></cite>, p. 35). Although generally associated with a collection of maps, as Antón-Barco argues, "atlases are a visual form of knowledge consisting on an encyclopedic collection of related objects or entities. Its mission is to offer a multitude of elements brought together by elective affinities so that its reader can understand the world that he or she lives in.” (<cite data-cite="7299034/JS2I4PY3"></cite>:46). In a sense, like the mythological referent from which it is named after, the Atlas is designed to "carry the world on its back" (<cite data-cite="7299034/4TDN96K2"></cite>). In its final form, the Atlas Mnemosyne consisted of a set of large black fabric screens attached to frames measuring 1.50 m x 2 m, on which different photographs were grouped by attaching them with small, easily manipulated clamps (<cite data-cite="7299034/HY9N8YHZ"></cite>, p. 412). The panels that make up the Atlas consist of sets of images organized by visual relationships, defined by certain recurring motifs of themes, gestures, and bodily dispositions found in a heterogeneity of sources not all of them considered, at the time, by art historians: from images extracted from art history books to advertisement pieces cut out from magazines. All this material was organized in groups and series, according to the links suggested by different visual, historical, and geographical resemblances. In general terms, this procedure could be described as a montage, in analogy to what Sergey Eisenstein or Dziga Vertov were developing at the time in the field of cinema, that is, as a form of disposition in space and time in which the union of parts conforms a holistic meaning (<cite data-cite="7299034/HY9N8YHZ"></cite>,<cite data-cite="7299034/UBQT2LZL"></cite>,<cite data-cite="7299034/7IRYBDQE"></cite>).
 
-```python
+```python tags=["figure-mnemosyne-*"]
 # An example of a panel from Atlas Mnemosyne (panel 79)
-display(Image("./media/T79_HD.jpg"))
+metadata = {
+    "jdh": {
+        "module": "object",
+        "object": {
+            "source": [
+                "An example of a panel from Atlas Mnemosyne (panel 79)"
+            ],
+            "type":
+            "image"
+        }
+    }
+}
+display(Image("./media/T79_HD.jpg"), metadata=metadata)
 ```
 
 The procedure to organize and manipulate the elements of the collection that integrate the Atlas is related to the epistemological principle of the "good neighbor", which entails that it is possible to creatively explore archives and libraries by finding surprising relationships derived from the significant neighborliness of elements that are next to those we are looking for. The principle of good neighborliness was exercised by Warburg with help from the special spatial arrangement of his grand library (<cite data-cite="7299034/9YEQKZLN"></cite>), a home and research place that comprised a massive and increasing collection of books and photographs, meticulously arranged and further rearranged. Unlike most libraries, the books were not organized by subject matter, alphabetical or numerical order, but by four categories: Image, Word, Orientation, and Action, each one arranged over four floors. In this way, the Library's system leads visitors from visual image to language, then to religion, science, and philosophy, and finally to the subject matter of history, patterns of behavior, and actions. This system can be browsed in a linear way but can also be used transversally, allowing for creative exploration and surprising relationships between elements in the collection.
@@ -145,12 +157,12 @@ from IPython.display import HTML
 from observable_jupyter import embed
 ```
 
-```python tags=["hermeneutics"]
+```python tags=["hermeneutics", "table-1", "data-table"] jdh={"object": {"source": ["Carguero datas"]}}
 # Load data set
 data_path = "./data/CargueroData.csv"
 data = pd.read_csv(data_path)
 data_csv = data.to_csv(index=False)
-data.head()
+data
 ```
 
 <!-- #region tags=["hermeneutics"] -->
