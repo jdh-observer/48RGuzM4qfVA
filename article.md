@@ -147,7 +147,7 @@ from observable_jupyter import embed
 
 ```python tags=["hermeneutics"]
 # Load data set
-data_path = "./data/CargeroData.csv"
+data_path = "./data/CargueroData.csv"
 data = pd.read_csv(data_path)
 data_csv = data.to_csv(index=False)
 data.head()
@@ -468,7 +468,7 @@ Following all the steps explained before, we designed a JavaScript object that d
 
 ```python tags=["figure-observable-*"]
 # Process the scenes and render the interactive atlas (it might a couple of seconds to render)
-embed('@aventuraworkspace/interactive_atlas',
+embed('@aventura-interactiva-ws/interactive_carguero_atlas',
       cells=['panelContainer', 'processedScenes'],
       inputs={'csvString': data_csv, 'scenes': scenes}
      )
