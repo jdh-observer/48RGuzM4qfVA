@@ -1,0 +1,30 @@
+column_name_spanish,description
+obras,name
+fecha,date
+medio,media
+tecnica,aristic technique
+material,material for producing the image
+soporte,material substrate
+alto,height in cms
+ancho,width in cms
+fuente,source
+descripcion,short description
+periodo,period
+region,geographical region depicted
+pais,probable country depicted
+camino,path region
+id,image ID
+modelo,source model
+repositorio,repository holding the image
+procedencia,procedence
+atributoCarguero,main visual attribute if the Carguero
+accionCarguero,main action of the carguero
+atributoCargado,main visual attribute of the carried person
+numeroCargueros,number of Cargueros in the image
+direccionMiradaCarguero,direction of sight of the Carguero
+direccionMiradaCargado,direction of sight of the carried person
+direccionCargado,direction of the body of the carreid person
+generoCargado,assumed gender of the carried person
+figura/fondo,relationship between foreground and background
+genero,painting genre
+otros,other (to tag images that do not depic Cargueros but are useful as symbolic references)
