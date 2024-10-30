@@ -13,7 +13,7 @@ jupyter:
     name: python3
 ---
 
-<!-- #region tags=["title"] -->
+<!-- #region editable=true slideshow={"slide_type": ""} tags=["title"] -->
 # Interactive panels as explorative tools of visual sources: continuing Warburg’s epistemological principles
 <!-- #endregion -->
 
@@ -198,10 +198,9 @@ First, we created a dataset that contains multiple metadata about our subjective
 
 import pandas as pd
 from IPython.display import HTML
-from observable_jupyter import embed
 ```
 
-```python editable=true slideshow={"slide_type": ""} tags=["hermeneutics", "table-1"]
+```python editable=true slideshow={"slide_type": ""} tags=["hermeneutics", "table-1", "data-table"]
 # Load column metadata
 metadata_path = "./data/CargueroColumnMetadata.csv"
 metadata = pd.read_csv(metadata_path)
@@ -213,7 +212,7 @@ metadata
 And the following table is a preview of the anotated dataset:
 <!-- #endregion -->
 
-```python editable=true slideshow={"slide_type": ""} tags=["hermeneutics", "table-2"]
+```python editable=true slideshow={"slide_type": ""} tags=["hermeneutics", "table-2", "data-table"]
 # Load data set
 data_path = "./data/CargueroData.csv"
 data = pd.read_csv(data_path)
@@ -532,19 +531,11 @@ scenes = {
 One additional, important aspect of this method for creating interactive panels is its potential expandability: besides the automated method of filtering for creating subsets and the definition of standard visualisations, the Aventura.js scene system works in a way that facilitates the creation of additional personalised panels (following the initial intuitive dispositions that gave origin to this project) and the addition of hyperlinks that connect to additional information. In our case, we added an automatized set of scenes that contain information about each element in the dataset and links to the original repositories in which they are hosted. This strategy expands the readings of the archive in the sense that it can work both inside the panel, offering a particular configuration and interpretation, and outside the panel, in a world of dispersed collections that have their own good neighbours and potentially new associations.
 <!-- #endregion -->
 
-<!-- #region tags=["hermeneutics"] -->
+<!-- #region editable=true slideshow={"slide_type": ""} tags=["hermeneutics"] -->
 Following all the steps explained before, we designed a JavaScript object that describes a set of scenes for our interactive panels. This scenes object is then processed by our custom functions to “hydrate” it, that is, to add the additional information that Aventura.js requires for  rendering the panels: filtering the dataset, constructing the visualisations, creating individual scenes that display links and metadata of each element in the collection.
 <!-- #endregion -->
 
 ```python editable=true slideshow={"slide_type": ""} tags=["figure-observable-*"]
-# Process the scenes and render the interactive atlas (it might a couple of seconds to render)
-embed('@aventura-interactiva-ws/interactive_carguero_atlas',
-      cells=['panelContainer', 'processedScenes'],
-      inputs={'csvString': data_csv, 'scenes': scenes}
-     )
-```
-
-```python editable=true slideshow={"slide_type": ""}
 from IPython.display import IFrame
 IFrame('https://observablehq.com/embed/@aventura-interactiva-ws/interactive_carguero_atlas?cells=panelContainer%2CpanelFromScenes%2Cscenes',width='100%', height='800')
 
