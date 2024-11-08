@@ -6,7 +6,7 @@ jupyter:
       extension: .md
       format_name: markdown
       format_version: '1.3'
-      jupytext_version: 1.14.4
+      jupytext_version: 1.16.4
   kernelspec:
     display_name: Python 3 (ipykernel)
     language: python
@@ -558,7 +558,7 @@ The “source model” category groups images according to the model they are ba
 <!-- #endregion -->
 
 <!-- #region citation-manager={"citations": {"": []}} -->
-For one of the scenes (Scene name: scatterPeriodoFigura), using Aventura.js’s new custom functions, we made a scatterplot (keyword “scatter”) representing the attribute "period" on the X axis and the attribute "figure/background" on the Y axis. We can observe in the resulting panel that there are more images labelled as "background" or as "balance" in the period between 1770 and 1810 than in the other periods. Specimens from the late colonial period (1770-1810) accounted for a transformation in visual epistemology characterised by presenting different human types, understood as castes or nations, as characters in their immediate geographical contexts, including the animal and botanical varieties peculiar to them (<cite data-cite="7299034/8JZZYA7Z"></cite>). Variations of the trope of placing human specimens in their geographical and natural contexts can be seen, for instance, in Vicente Albán's mestizaje paintings, and in Cuadro del Peru commissioned by Ignacio Lecuanda (<cite data-cite="7299034/8JZZYA7Z">(</cite>).
+For one of the scenes (Scene name: scatterPeriodoFigura), using Aventura.js’s new custom functions, we made a scatterplot (keyword “scatter”) representing the attribute "period" on the X axis and the attribute "figure/background" on the Y axis. We can observe in the resulting panel that there are more images labelled as "background" or as "balance" in the period between 1770 and 1810 than in the other periods. Specimens from the late colonial period (1770-1810) accounted for a transformation in visual epistemology characterised by presenting different human types, understood as castes or nations, as characters in their immediate geographical contexts, including the animal and botanical varieties peculiar to them (<cite data-cite="7299034/8JZZYA7Z"></cite>). Variations of the trope of placing human specimens in their geographical and natural contexts can be seen, for instance, in Vicente Albán's mestizaje paintings, and in Cuadro del Peru commissioned by Ignacio Lecuanda (<cite data-cite="7299034/8JZZYA7Z"></cite>).
 <!-- #endregion -->
 
 <!-- #region citation-manager={"citations": {"": []}} -->
@@ -579,7 +579,7 @@ The drawings and images made by Roulin participated in an image circulation netw
 <!-- #endregion -->
 
 <!-- #region citation-manager={"citations": {"": []}} -->
-Thus, Roulin's prominence in the visual culture of the early Republican period has been highlighted by other scholarship (<cite data-cite="7299034/MZ9FSNZV"></cite>). For example, Auguste Le Moyne copied the profile of Simón Bolívar drawn by Roulin in 1828 <cite data-cite="7299034/ZF79WP3U">(Vanegas, 2012)</cite>. Likewise, his watercolors were copied and published in the travelogues of Gaspar Mollien (1824), John Potter Hamilton (1827), Guilaume Lallement (1826), Alcide D'Orbigny (1841) and M. A. de Latrre (1848). Modifications of his motifs can also be found in engravings by John Potter Hamilton (1827, 1993), Gaetano Osculati (1954), and Cesar Famin (1837). Thus, it has been speculated that Roulin may have had a catalogue of plates at the service of travellers with scenes of customs, types, views, and monuments (<cite data-cite="undefined"></cite>; <cite data-cite="7299034/RTPHGI8V"></cite>).
+Thus, Roulin's prominence in the visual culture of the early Republican period has been highlighted by other scholarship (<cite data-cite="7299034/MZ9FSNZV"></cite>). For example, Auguste Le Moyne copied the profile of Simón Bolívar drawn by Roulin in 1828 <cite data-cite="7299034/ZF79WP3U"></cite>. Likewise, his watercolors were copied and published in the travelogues of Gaspar Mollien (1824), John Potter Hamilton (1827), Guilaume Lallement (1826), Alcide D'Orbigny (1841) and M. A. de Latrre (1848). Modifications of his motifs can also be found in engravings by John Potter Hamilton (1827, 1993), Gaetano Osculati (1954), and Cesar Famin (1837). Thus, it has been speculated that Roulin may have had a catalogue of plates at the service of travellers with scenes of customs, types, views, and monuments (<cite data-cite="undefined"></cite>; <cite data-cite="7299034/RTPHGI8V"></cite>).
 <!-- #endregion -->
 
 <!-- #region citation-manager={"citations": {"": []}} -->
