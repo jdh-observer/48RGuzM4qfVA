@@ -71,7 +71,7 @@ This work is the product of an interdisciplinary collaboration, combining expert
 The Mnemosyne Atlas is an unfinished project art historian Aby Warburg worked on for the last years of his life (<cite data-cite="7299034/5SBJCW9X"></cite>). It was a device that visually stored and displayed central aspects of Western visual memory. In Warburg's words, the Atlas was an instrument of "orientation" which, by exhibiting images and their visual relationships, allowed a researcher to illustrate how expressive values of  "life in motion" from Antiquity were reincorporated in Renaissance art (<cite data-cite="7299034/5SBJCW9X"></cite>). Although generally associated with a collection of maps, as Antón-Barco argues, "atlases are a visual form of knowledge consisting on an encyclopedic collection of related objects or entities. Its mission is to offer a multitude of elements brought together by elective affinities so that its reader can understand the world that he or she lives in.” (<cite data-cite="7299034/JS2I4PY3"></cite>, p. 46). In a sense, like the mythological Atlas, Warburg’s Atlas is sought to "carry the world on its back" (<cite data-cite="7299034/4TDN96K2"></cite>). In its final form, the Atlas Mnemosyne consisted of a set of large black fabric screens attached to frames measuring 1.50 m x 2 m on which different photographs were grouped by attaching them with small, easily manipulated clamps (<cite data-cite="7299034/HY9N8YHZ"></cite>, p. 412). The panels that make up the Atlas consist of sets of images organized by visual relationships, defined by certain recurring motifs of themes, gestures, and body configurations found in heterogeneous sources, not all of them considered, at the time, by art historians: from images extracted from art history books to advertisement pieces cut out from magazines. All this material was organized in groups and series, according to the links suggested by different visual, historical, and geographical resemblances. In general terms, this procedure could be described as a montage, in analogy to what Sergey Eisenstein or Dziga Vertov were developing at the time in cinema, that is, as an arrangement of elements in space and time in which the union of parts conforms a holistic meaning (<cite data-cite="7299034/HY9N8YHZ"></cite>; <cite data-cite="7299034/UBQT2LZL"></cite>; <cite data-cite="7299034/7IRYBDQE"></cite>).
 <!-- #endregion -->
 
-```python editable=true slideshow={"slide_type": ""} jdh={"module": "object", "object": {"source": ["Aventura Interactiva's Workspace: A guided tour of the Carguero Atlas: the path of Humboldt and Roulin"]}} tags=["figure-mnemosyne-*"]
+```python editable=true jdh={"module": "object", "object": {"source": ["Aventura Interactiva's Workspace: A guided tour of the Carguero Atlas: the path of Humboldt and Roulin"]}} slideshow={"slide_type": ""} tags=["figure-mnemosyne-*"]
 # An example of a panel from Atlas Mnemosyne (panel 79)
 metadata = {
     "jdh": {
@@ -200,7 +200,7 @@ import pandas as pd
 from IPython.display import HTML
 ```
 
-```python editable=true slideshow={"slide_type": ""} jdh={"module": "object", "object": {"source": ["Column data"]}} tags=["hermeneutics", "table-1", "data-table"]
+```python editable=true jdh={"module": "object", "object": {"source": ["Column data"]}} slideshow={"slide_type": ""} tags=["hermeneutics", "table-1", "data-table"]
 # Load column metadata
 metadata_path = "./data/CargueroColumnMetadata.csv"
 metadata = pd.read_csv(metadata_path)
@@ -212,7 +212,7 @@ metadata
 And the following table is a preview of the anotated dataset:
 <!-- #endregion -->
 
-```python editable=true slideshow={"slide_type": ""} jdh={"module": "object", "object": {"source": ["Dataset anotated"]}} tags=["hermeneutics", "table-2", "data-table"]
+```python editable=true jdh={"module": "object", "object": {"source": ["Dataset anotated"]}} slideshow={"slide_type": ""} tags=["hermeneutics", "table-2", "data-table"]
 # Load data set
 data_path = "./data/CargueroData.csv"
 data = pd.read_csv(data_path)
