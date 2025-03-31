@@ -6,7 +6,7 @@ jupyter:
       extension: .md
       format_name: markdown
       format_version: '1.3'
-      jupytext_version: 1.16.7
+      jupytext_version: 1.16.6
   kernelspec:
     display_name: Python 3 (ipykernel)
     language: python
@@ -30,7 +30,7 @@ Universidad Pedagógica Nacional
 
 <!-- #region tags=["copyright"] -->
 [![cc-by](https://licensebuttons.net/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0/) 
-©<AUTHOR or ORGANIZATION / FUNDER>. Published by De Gruyter in cooperation with the University of Luxembourg Centre for Contemporary and Digital History. This is an Open Access article distributed under the terms of the [Creative Commons Attribution License CC-BY](https://creativecommons.org/licenses/by/4.0/)
+© Sergio Rodríguez Gómez - Juan Felipe Urueña Calderón. Published by De Gruyter in cooperation with the University of Luxembourg Centre for Contemporary and Digital History. This is an Open Access article distributed under the terms of the [Creative Commons Attribution License CC-BY](https://creativecommons.org/licenses/by/4.0/)
 
 <!-- #endregion -->
 
@@ -74,7 +74,19 @@ Aby Warburg’s Mnemosyne Atlas (1924–1929)—an unfinished series of 63 panel
 
 ```python tags=["figure-panel79-*"]
 # An example of a panel from Mnemosyne Atlas (panel 79)
-display(Image("./media/T79_HD.jpg"))
+metadata = {
+    "jdh": {
+        "module": "object",
+        "object": {
+            "source": [
+                "An example of a panel from Atlas Mnemosyne (panel 79)"
+            ],
+            "type":
+            "image"
+        }
+    }
+}
+display(Image("./media/T79_HD.jpg"), metadata=metadata)
 ```
 
 The organisational principle behind the Atlas is what Warburg called “good neighbourliness”. This idea is related to the creative exploration of archives and libraries organised by thematic categories by focusing on the proximity of elements, revealing surprising connections.  For instance, Warburg applied this principle in his grand library <cite data-cite="7299034/9YEQKZLN">(Settis et al., 2010)</cite>, his home and research place that comprised a massive and constantly increasing collection of books and photographs, meticulously arranged and rearranged. Unlike most libraries, the books were not organised by subject matter, alphabetical or numerical order, but by four categories: Image, Word, Orientation, and Action, each one arranged over one of four floors. The Library's organisation system directed visitors through intersecting topics: from visual image to language, then to religion, science, and philosophy, and finally to the subject matter of history, patterns of behaviour, and actions. Thus, this system encouraged both linear and transversal exploration, allowing for unexpected discoveries.
@@ -226,7 +238,7 @@ from IPython.display import HTML
 from observable_jupyter import embed
 ```
 
-```python tags=["hermeneutics", "table-columnmetadata-*"]
+```python tags=["hermeneutics", "table-columnmetadata-*, "data-table"]
 # Load column metadata
 metadata_path = "./data/CargueroColumnMetadata.csv"
 metadata = pd.read_csv(metadata_path)
@@ -238,12 +250,12 @@ metadata
 And the following table is a preview of the anotated dataset:
 <!-- #endregion -->
 
-```python tags=["hermeneutics", "table-dataset-*"]
+```python tags=["hermeneutics", "table-dataset-*, "data-table"]
 # Load data set
 data_path = "./data/CargueroData.csv"
 data = pd.read_csv(data_path)
 data_csv = data.to_csv(index=False)
-data.head()
+data
 ```
 
 <!-- #region tags=["hermeneutics"] -->
@@ -579,7 +591,19 @@ In this section, we offer further description of both the design and our underst
 
 ```python tags=["figure-interface1-*"]
 # Initial visualisation interface of the panel: a comparison between Humboldt's and Roulin's Carguero models
-display(Image("./media/interface1.png"))
+metadata = {
+    "jdh": {
+        "module": "object",
+        "object": {
+            "source": [
+                "Initial visualisation interface of the panel: a comparison between Humboldt's and Roulin's Carguero models"
+            ],
+            "type":
+            "image"
+        }
+    }
+}
+display(Image("./media/interface1.png"), metadata=metadata)
 ```
 
 For this one particular tour, we filtered images created before the 20th century (in the filter system described as \[“date”, "<", 1900\]), particularly focusing on the tagged categories “figure/background” (in Spanish, “figura/fondo”), “source model” (“modelo”), “date” (“fecha”) and “period” (“periodo”). The "Figure/background" metadata was tagged based on the proportion of figures and landscapes: the images that predominantly represent landscapes without human figures are labelled as "background" (“fondo”), the images that predominantly represent landscapes that contain humans are labelled as "balance" (“equilibrio”), and the images in which there is a predominance of human figures are labelled as "figure" (“figura”).
@@ -592,7 +616,19 @@ For one of the scenes (Scene name: scatterPeriodoFigura), using Aventura.js’s 
 
 ```python tags=["figure-interface2-*"]
 # Figure/Background vs. Period
-display(Image("./media/interface2.png"))
+metadata = {
+    "jdh": {
+        "module": "object",
+        "object": {
+            "source": [
+                "Figure/Background vs. Period"
+            ],
+            "type":
+            "image"
+        }
+    }
+}
+display(Image("./media/interface2.png"), metadata=metadata)
 ```
 
 This transformation is, paradigmatically, also present in Humboldt's views of nature. Plate V of Vues des Cordillères <cite data-cite="7299034/49SACHS5">(Humboldt, 1810)</cite> is Humboldt’s representation of the Carguero, and exists within this visual episteme; furthermore, the plate’s production and meaning are affected by the American continent social networks in which Humboldt's journey, journal entries, and sketches were produced <cite data-cite="7299034/KWRLHZYH">(Cañizares-Esguerra & Thurner, 2022)</cite> and by the European social networks that supported the conversion of sketches and notes into images and texts, putting them into a global comparative horizon <cite data-cite="7299034/4TSNQZT6">(Bourguet, 2017)</cite>. In the image representation there is a balance between the natural elements and activities of the Carguero: both are elements that structure the composition and provide relevant information to understand the use of plants, means of transport, and other particularities of Andean verticality. This explains why we can see in the panel that during this period the attribute "balance" is predominant.
@@ -602,28 +638,76 @@ In contrast, from 1819-1850, images increasingly emphasised figures over backgro
 
 ```python tags=["figure-interface3-*"]
 # Source model vs. Period
-display(Image("./media/interface3.png"))
+metadata = {
+    "jdh": {
+        "module": "object",
+        "object": {
+            "source": [
+                "Source model vs. Period"
+            ],
+            "type":
+            "image"
+        }
+    }
+}
+display(Image("./media/interface3.png"), metadata=metadata)
 ```
 
 This can also be seen in another panel that depicts a circle pack tree map (Scene name: "packRoulin") filtered to include only the period "1819-1850,” and displaying the hierarchical organisation of the attributes "source model" and "background and figure”. It is striking that this is the most used model, since all travellers quote Humboldt as a reference for the description of the Carguero, but they do not use his image as a model. As the initial compare graph (Scene name: 'start') of two adjacent images included in our atlas shows, there are clear differences in style in both models. It is especially important to note that Humboldt's image integrates the Carguero as a part of the landscape, whereas Roulin’s highlights its saliency and physical characteristics.
 
 ```python tags=["figure-interface4-*"]
 # Source model in the 1819 - 1850 period
-display(Image("./media/interface4.png"))
+metadata = {
+    "jdh": {
+        "module": "object",
+        "object": {
+            "source": [
+                "Source model in the 1819 - 1850 period"
+            ],
+            "type":
+            "image"
+        }
+    }
+}
+display(Image("./media/interface4.png"), metadata=metadata)
 ```
 
 On another circle pack tree map (Scene name: "packHumboldtPeriodo") with the “source model” attribute filtered by "humboldt,” and displaying the hierarchical organisation of the attributes "period" and "figure/background", it can be observed that, in the "1819-1850" period, the images which used Humboldt’s image as a model turned the “landscape” into “figures,” and others took the “figures” out and turned the images into “background.”
 
 ```python tags=["figure-interface5-*"]
 # Humboldt's Figure/Background and Periods
-display(Image("./media/interface5.png"))
+metadata = {
+    "jdh": {
+        "module": "object",
+        "object": {
+            "source": [
+                "Humboldt's Figure/Background and Periods"
+            ],
+            "type":
+            "image"
+        }
+    }
+}
+display(Image("./media/interface5.png"), metadata=metadata)
 ```
 
 For another panel (Scene name: "roulinModel"), we used a circle pack tree map with a filter to get only Roulin’s derivations. In this panel we can see the great diversity of contexts in which this model transformed its meaning, adapted by communities of interpretation that demanded new epistemic and aesthetic criteria of validity. In this way, Roulin (1824) and later Alcide d'Orbigny (1841) use the category of "type" produced within the circle of the Académie des sciences in Paris, to create their image of the Carguero. This model was reinterpreted in different contexts. Colonel John Potter Hamilton (1827) linked it to British "picturesque" explorations for political and commercial purposes, while Cesar Famin's entry on Colombia in L'Universe Pittoresque associated it with the genre of costumes. Additionally, the image was featured in various European popular illustrated press magazines, including the Magasin Pittoresque (1848), the Semanario Pintoresco Español (1849), and Das Pfennig-Magazin (1851). Despite all these sources citing Humboldt's encounter with the Carguero, they favoured Roulin's drawing as a suitable model for the growing interest in exploring American human types.
 
 ```python tags=["figure-interface6-*"]
 # Material substrates of Roulin's derivations
-display(Image("./media/interface6.png"))
+metadata = {
+    "jdh": {
+        "module": "object",
+        "object": {
+            "source": [
+                "Material substrates of Roulin's derivations"
+            ],
+            "type":
+            "image"
+        }
+    }
+}
+display(Image("./media/interface6.png"), metadata=metadata)
 ```
 
 These data assisted readings of our collection by using interactive panels take us to the following question: why the travellers who were in Colombia/Nueva Granada in the period “1819-1851” did not use Humboldt’s Carguero model? What aesthetic, technical, and epistemic conditions made it possible for Roulin's model to circulate and to be re-signified in the different interpretation communities in which it was adapted? By reviewing the primary sources and secondary literature, we conclude that two factors must be considered to answer these questions. The first reason is technological, related to the techniques of inscription and practices of image circulation. The second is epistemological and rhetorical, related to the audiences that the inscriptions intended to affect. Bruno Latour understands these two aspects as part of the same process: the interest in inscriptions is understandable insofar as it is related to the trajectories, routes, and expansive plans that their technology and structure make possible. Correlatively, displacement allows for innovations in inscriptions, writing, archiving, and processing, which only make sense to the extent that they persuade and gain adherence in the midst of controversies <cite data-cite="7299034/CT29YC4T">(Latour, 2012)</cite>.
@@ -639,35 +723,95 @@ In relation to the aesthetic and scientific conditions of acceptability, Roulin'
 
 ```python tags=["figure-interface7-*"]
 # Comparision between Roulin's Animal Kingdom plate and a watercolour plate
-display(Image("./media/interface7.png"))
+metadata = {
+    "jdh": {
+        "module": "object",
+        "object": {
+            "source": [
+                "Comparision between Roulin's Animal Kingdom plate and a watercolour plate"
+            ],
+            "type":
+            "image"
+        }
+    }
+}
+display(Image("./media/interface7.png"), metadata=metadata)
 ```
 
 Consequently, it is understandable that Roulin’s sketch of the Carguero was modified and turned into an engraving in Alcide d'Orbigny's travelogue, Voyage Pittoresque dans les deux Amériques <cite data-cite="7299034/IC53A5GV">(d'Orbigny, 1841)</cite>, a popular book that contributed significantly to the dissemination of knowledge of Colombia in Europe. D'Orbigny, a mollusk specialist, belonged to the same scientific circle as Cuvier and Roulin. Like the latter, he was credited as a "disciple" in the 1836 edition of Le Règne Animal. In fact, his figure plays a fundamental role in research on the determination of the racial characteristics of Americans for Cuvier's classification of Le Règne Animal. In 1825, he was commissioned by the Museum of Natural History in Paris to investigate "in depth the language and physiological characteristics" of South American peoples <cite data-cite="7299034/XQRMQ6JZ">(d'Orbigny, 1839, p. IX)</cite>. As an analytical tool, Roulin and d'Ornigny helped transpose, from the comparative anatomy of animals, the category of "type" to find a way to organise the multiplicity of human populations existing in America. In this sense, Roulin's and d'Orbigny's Carguero drawings can be interpreted as an investigation into a "social type" that existed because of specific climatic, geographical, and racial features. These are rationalised by the observations of the external characters of people and their relations with internal organic functioning. Roulin refers to the Carguero as a "human mount"<cite data-cite="7299034/JVP6N5AR">(Roulin, 1865, p. 263)</cite>, pointing at a comparison of different modes of transportation and uses of human and animal muscle-driven motion power.
 
 ```python tags=["figure-interface8-*"]
 # Roulin, d'Orbigny and the category of 'type'.
-display(Image("./media/interface8.png"))
+metadata = {
+    "jdh": {
+        "module": "object",
+        "object": {
+            "source": [
+                "Roulin, d'Orbigny and the category of 'type'"
+            ],
+            "type":
+            "image"
+        }
+    }
+}
+display(Image("./media/interface8.png"), metadata=metadata)
 ```
 
 Another derivation of Roulin's model of the Carguero is found in the travelogue of the British Diplomat Colonel John Potter Hamilton <cite data-cite="7299034/ZJA9TWSP">(Hamilton, 1827)</cite>, the first official envoy on behalf of the British government to Colombia. After returning to his homeland, he published his travelogue with the famous publishing house John Murray. This publishing house was noted, among other things, for tapping into the demand for such products, and published more than 200 travel books during the first half of the 19th century <cite data-cite="7299034/YJEB294J">(Keighren & Withers, 2011, p. 1334)</cite>. Hamilton used, with adaptations, several of Roulin's models in his book. However, the new disposition of the image of the Carguero changes the direction of the characters and places them on a laborious ascent. They climb around a tree on the curve of a steep mountain road (see graphical comparison on scene called "roulinHamilton"). The image is similar to other images of the period, such as those in the travelogues of British merchant traveller Charles Stuart Cochrane <cite data-cite="7299034/E4J6TU6R">(Cochrane, 1825)</cite> and Swedish diplomatic traveller August Gosselman (<cite data-cite="7299034/HQUVJJ2V">Gosselman, 1828</cite>;<cite data-cite="7299034/7F7VVS9Z">Gosselman, 1981</cite>). These images are characterized by the use of a picturesque aesthetic that functions as a device to frame the landscape and organize it with industrious human figures, settlements, crops, and productive animals, in contrast to the untamed wilderness that still needs to be controlled by man. In these stories, the images coexist with visual metaphors that frame the observations of nature as "pictures", "paintings", "drawings", "sketches", "maps", "scenery", "beautiful shows", "dioramas", "panoramas", "magic lanterns" or "Peep Shows". The use of the Carguero image is then indicative of the resignification of picturesque aesthetics in the voyages to America, characterised by the use of ethnographic and social themes of concern to travellers of the period <cite data-cite="7299034/WFVWC9QP">(Diener, 2007)</cite>, who were described by Mary Louis Pratt as the avant-garde of capitalism <cite data-cite="7299034/QCYRHZVF">(Pratt, 1992)</cite>.
 
 ```python tags=["figure-interface9-*"]
 # Hamilton's Picturesque Carguero
-display(Image("./media/interface9.png"))
+metadata = {
+    "jdh": {
+        "module": "object",
+        "object": {
+            "source": [
+                "Hamilton's Picturesque Carguero"
+            ],
+            "type":
+            "image"
+        }
+    }
+}
+display(Image("./media/interface9.png"), metadata=metadata)
 ```
 
 Likewise, through Hamilton, Roulin's model found its way into the volume on Colombia of the monumental 67-volume encyclopaedic Universal Picturesque Collection, in which the cabinet traveller César Famin arranged, on a generic natural background, a set of figures intended to imagine the costumes of Colombia and Guyana. The "Universal picturesque collection" (Collection: L'Univers Pittoresque) in which Famin participated, and d'Orbigny's "picturesque journey" (Voyage pittoresque), are examples of how in France "the picturesque" was understood as a publishing guideline; a way of making books and periodicals, richly illustrated and with complex logistical processes <cite data-cite="7299034/SPLKI368">(Jeanjean-Becker, 2018)</cite>. The books and images of the travellers present are used as privileged sources for these encyclopaedic projects with pretensions of synthesis to take place. The image of the Carguero is representative of this procedure. It does not pretend to be a faithful representation of nature, but rather constructs a generic wild space that synthesizes his entire journey through Guyana and Colombia, on which different human types and their costumes are arranged to juxtapose them and establish comparisons and contrasts. In this way, the pretension of travel books to bring distant geography closer so that it can be experienced without leaving home is realised with cabinet travels and, at the same time, replicated.
 
 ```python tags=["figure-interface10-*"]
 # Costumes / Colombie Carguero
-display(Image("./media/interface10.png"))
+metadata = {
+    "jdh": {
+        "module": "object",
+        "object": {
+            "source": [
+                "Costumes / Colombie Carguero"
+            ],
+            "type":
+            "image"
+        }
+    }
+}
+display(Image("./media/interface10.png"), metadata=metadata)
 ```
 
 Finally, by focusing on his figure instead of the background, the Carguero drawing let A. de Lattre to contrast the practice of the Quindío road with the *estiveros* of Putumayo. This made it possible for the image to be used in mass-production projects in Europe and for it to be circulated, held on an engraving plate, by various illustrated press companies in countries such as France (Magasin Pittoresque, 1848), Spain (Semanario Pintoresco Español, 1849) and Germany (Das Pfennig-Magazin, 1851). These magazines were local versions of The Penny Magazine, first published in the United Kingdom in 1832 by the Society for the dissemination of useful knowledge. The model of this weekly magazine soon spread to various parts of Europe, disseminating not only the format of a publication, but technological applications of woodcutting and prototyping, a process of rationalisation of print production, a business model and an ideal of the correlation between the expansion of the readership market and the possibility of bringing access to "useful" knowledge to the working classes. Magasin Pittoresque, for example, was first published by Édouard Charton in 1833 and is associated with a faction of saintsimonism called "republican saintsimonism" <cite data-cite="7299034/PQI8HPJH">(Aurenche, 2021)</cite>. Charton explicitly referred to his publishing projects as means by which he intended to "combat the ignorance of the popular classes" (Le Magasin Pittoresque, 1833, p. 98). Dissemination was made possible by the recent invention of metal plate engraving processes that made it possible to obtain copies in "hundreds of thousands" (Le Magasin Pittoresque, 1833, p. 98). In this context, images make it possible to reach a wider public, to leave a lasting impression, and a quicker and more fun way of learning from which children benefit: "instead of letting them sleep or yawn over a book, take them often to museums, or even to boulevards, georamas and panoramas" (Le Magasin Pittoresque, 1833, p. 99). Likewise, in the Semanario Pintoresco Español, images are mentioned for their function of "representing absent things as if they were before us and which we could only see at the cost of arduous journeys and great expense’ (Semanario Pintoresco Español, 1844, p. 48).
 
 ```python tags=["figure-interface11-*"]
 # Costumes / Colombie Carguero
-display(Image("./media/interface11.png"))
+metadata = {
+    "jdh": {
+        "module": "object",
+        "object": {
+            "source": [
+                "Costumes / Colombie Carguero"
+            ],
+            "type":
+            "image"
+        }
+    }
+}
+display(Image("./media/interface11.png"), metadata=metadata)
 ```
 
 ## Discussion
