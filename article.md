@@ -238,7 +238,7 @@ from IPython.display import HTML
 from observable_jupyter import embed
 ```
 
-```python tags=["hermeneutics", "table-columnmetadata-*, "data-table"]
+```python jdh={"module": "object", "object": {"source": ["Column data"]}} tags=["hermeneutics", "table-columnmetadata-*", "data-table"]
 # Load column metadata
 metadata_path = "./data/CargueroColumnMetadata.csv"
 metadata = pd.read_csv(metadata_path)
@@ -250,7 +250,7 @@ metadata
 And the following table is a preview of the anotated dataset:
 <!-- #endregion -->
 
-```python tags=["hermeneutics", "table-dataset-*, "data-table"]
+```python jdh={"module": "object", "object": {"source": ["Dataset anotated"]}} tags=["hermeneutics", "table-dataset-*", "data-table"]
 # Load data set
 data_path = "./data/CargueroData.csv"
 data = pd.read_csv(data_path)
@@ -573,7 +573,7 @@ One additional, important aspect of this method for creating interactive panels 
 Following all the steps explained before, we designed a JavaScript object that describes a set of scenes for our interactive panels. This scenes object is then processed by our custom functions to “hydrate” it, that is, to add the additional information that Aventura.js requires for  rendering the panels: filtering the dataset, constructing the visualisations, creating individual scenes that display links and metadata of each element in the collection.
 <!-- #endregion -->
 
-```python
+```python jdh={"module": "object", "object": {"source": ["Interactive panels"]}} tags=["figure-observable-*"]
 # Process the scenes and render the interactive atlas (it might a couple of seconds to render)
 embed('@aventura-interactiva-ws/interactive_carguero_atlas',
       cells=['panelContainer', 'processedScenes'],
