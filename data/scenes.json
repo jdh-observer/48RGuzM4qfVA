@@ -1,0 +1,277 @@
+{
+  "start": {
+    "viz": {"filter":[], "type": "compare", "x": 6, "y": 11},
+    "title": "A comparison between Humboldt's and Roulin's Carguero models",
+    "text": "Consider two models of the Carguero (Man carrier), the representation of subalternized people that were used as means of transport in the harsh geographical accidents of nineteenth-century Colombia, and other places in South America. The first model comes from the famous Prussian naturalist Alexander von Humboldt, who, in his diary, and later in his work Vues des Cordillères, recorded his encounter with a Carguero named Villanero. His description of the encounter became famous and a point of reference for a large number of travelers when describing their own experiences. The second one is the model of François Desiré Roulin, a scientific traveler who made part of an expedition composed of French professionals recommended by Georges Cuvier and Alexander von Humboldt to the plenipotentiary minister of Gran Colombia, Francisco Antonio Zea.<br>Note: the panels in this Atlas contain clickable areas.",
+    "options": [ { "btn": "Continue main route", "scene": "scatterPeriodoFigura" } ]
+  },
+  "scatterPeriodoFigura": {
+    "viz": {"filter": [ ["fecha", "<", 1900], ["otros", "=", "false"] ], "type": "scatter", "x": "periodo", "y": "figura/fondo"},
+    "title": "Figure/Background vs. Period",
+    "text": "This panel shows that there are more images in the 'background' (fondo) and 'balance' (equilibrio) categories in the period between 1770 and 1810 than in other periods, that is, there is a predominance of representations of the Carguero as a part of the landscape, rather than as the center of attention. Images from the late colonial period (1770-1810) participated in a transformation in visual epistemology characterized by presenting different human classifications, understood as castes or nations, in their immediate geographical contexts, including the animal and botanical varieties peculiar to them.",
+    "options": [
+      { "btn": "Continue main route", "scene": "pack1750_1810" },
+      { "btn": "Detour: 'Quadro del Perú'", "scene": "detour1"}
+    ]
+  },
+  "detour1": {
+    "meta": 1,
+    "text": "From <a href='https://flacso.edu.ec/laglobal/cabinet/artificialia/quadro-del-peru/' target='_blank'>CLACSO's LAGLOBAL</a>: 'The Quadro’s primary author was José Ignacio de Lequanda (Vizcaya 1748 – Cadiz 1800). The illustrations were made by Louis Thiebaut from many sources, including the so-called Trujillo del Perú Codex (1782–85) and the Malaspina Expedition (1789-1794). Lequanda resided for most of his productive life in Lima, where he contributed to the Mercurio Peruano (1791–94). The material of the Quadro is oil on canvas but it is distinguished by its unusual dimensions (331 cm × 118 cm) and composition: 195 scenes with 381 figures surrounded by explanatory text. In addition, the framed canvas is crowned and gilded with twin cornucopias graced by a sheaf of arrows, symbolising the bounty or ‘treasure’ of the New World under Hispanic Monarchy. The two central geographical images (an east-up map of central Peru, and below it a profile view of the rich mines at Hualgayoc) form an axis that represents the new economic centre of 18th-century Peru, which had shifted from Potosí to the region adjacent to Lima. The central region united three major ecological and productive zones. In the Quadro, this vertical economic geography is represented by the unfolding of a concentric sequence of niches populated by fishes and amphibians, small and large quadrupeds, simians, and humans. The latter is divided in two classes, ‘civilised’ (or coastal and highland) and ‘savage’ (or Amazonian), with each composed of 16 ‘nations’. Birds occupy the perimeter of the Quadro, seemingly lifting the entire canvas on their wings. In a word, the Quadro is a tableau that reveals in a synoptic visual field what today we call ‘biodiversity’ but which in enlightened circles of the times was called ‘the idea of Peru.’ This ‘idea’ held that Peru was a mirror of the universe and the crown jewel of Hispanic Empire'.",
+    "areas": [
+      { "x": 424, "y": 348, "w": 621, "h": 338, "btn": "", "tooltip": "", "scene": "nacionesCivilizadas" },
+      { "x": 1293, "y": 329, "w": 395, "h": 417, "btn": "", "tooltip": "", "scene": "detalleNacionSalvaje" }
+    ]
+  },
+  "nacionesCivilizadas": {
+    "meta": 2, "options": [ { "btn": "Back to main route", "scene": "scatterPeriodoFigura"} ]
+  },
+  "detalleNacionSalvaje": {
+    "meta": 107,
+    "title": "Detail of 'Quadro del Perú': wild nations",
+    "text": "The two characters depicted here were protagonists of a network of model copying (the 'visible empire' in the words of Art Historian Daniela Bleichmar), exemplary of the practices of image circulation used to govern from a distance, coordinate between administrative units, and circulate knowledge in the late eighteenth century Hispanic empire.",
+    "options": [ { "btn": "Back to main route", "scene": "scatterPeriodoFigura"} ],
+    "areas": [ { "x": 637, "y": 392, "w": 1274, "h": 783, "btn": "", "tooltip": "", "scene": "relacion" } ]
+  },
+  "relacion": {
+    "meta": 106,
+    "title": "Detail of Viceroy Gil de Taboada's Government report",
+    "text": "For instance, these images were used in a government report where Viceroy Gil de Taboada addressed his successor, Ambrosio O'Higgins, Marquess of Osorno. This report, concluded in 1796, was elaborated by two of the advisers of the former ruler: Hipólito Unanue and the accountant José Ignacio de Lecuanda.",
+    "options": [ { "btn": "Back to main route", "scene": "scatterPeriodoFigura"} ],
+    "areas": [ { "x": 220, "y": 215, "w": 440, "h": 430, "btn": "", "tooltip": "", "scene": "indiosMalaspina" } ]
+  },
+  "indiosMalaspina": {
+    "meta": 103,
+    "title": "Bauza collection form Malaspina Expedition",
+    "text": "The characters originally belonged to a series of plates made in the context of the Malaspina expedition, currently located in the Museum of America in Madrid under the 'Bauza collection'. The images refer to Peru. The botanists Luis Née, Tadeo Haenke and the commissioners of the Viceroy Gil de Taboada, Juan Tafalla and Francisco del Pulgar, participated in this enterprise. One of the most important areas of exploration was coming in direct contact with native populations of the Amazon. In their visual composition, some of these images put together two types of Indians from a given region and add an explanatory text.",
+    "options": [ { "btn": "Back to main route", "scene": "scatterPeriodoFigura"} ],
+    "areas": [ { "x": 547, "y": 273, "w": 374, "h": 540, "btn": "", "tooltip": "", "scene": "indioIquito" } ]
+  },
+  "indioIquito": {
+    "meta": 104,
+    "title": "Bauza collection form Malaspina Expedition",
+    "text": "The authorship of these images is under discussion. They are generally attributed to an anonymous painter and sometimes to Tadeo Haenke. Although all the images are in the same collection, and it has traditionally been assumed that they were made in the context of the Malaspina Expedition, there are doubts about authorship consistency between the images that present the Indians in pairs and those that present them individually. On the one hand, based on a formal study of the style, the ink and the paper used, Fernando Villegas has affirmed that the first series of images were not elaborated by the expeditionaries of the Malaspina Expedition but were made during the exploration of Governor Francisco Requena and the priest Gribal. On the other hand, Peralta Ruiz affirms that the resemblance between the two series of images proves that the expeditionaries in charge of Malaspina (Nee and Haneke) came across Gribal and Requena and allowed them to copy their drawings.",
+    "options": [ { "btn": "Back to main route", "scene": "scatterPeriodoFigura"} ]
+  },
+  "pack1750_1810": {
+    "viz": {"filter": [ ["periodo", "=", "1750 - 1810"], ["otros", "=", "false"] ], "type": "pack", "x": "figura/fondo", "y":"figura/fondo"},
+    "title": "Figure/background in the 1750 - 1810 period",
+    "text": "Variations around the idea of placing human types in their geographical and natural contexts can be seen in Vicente Albán's mestizaje paintings, and in Quadro del Perú commissioned by Ignacio Lecuanda. This transformation is, paradigmatically, also present in Humboldt's Plate V of Vues des Cordillères, depicting the Carguero. There is a balance in representation of natural objects along with the activities of the Carguero, as they are all illustrative elements of the use of plants, means of transport, and other particularities of Andean verticality. This explains why during this period the 'balance' (equilibrio) category is preponderant",
+    "options": [
+      { "btn": "Continue main route", "scene": "scatterRoulin" },
+      { "btn": "Detour through 'Plate V of Vues des Cordillères'", "scene": "detour2" }
+    ]
+  },
+  "detour2": {
+    "meta": 6,
+    "text": "Plate V of Vues, showing the passage of the Quindío region, is an important window to Humboldt's conceptions about the mixing art and science for the purpose of sensitively presenting vertical American nature. Oliver Lubrich refers to plate V of Vues as a multiple perspective drawing, designed from the points of view of different disciplines, and open to diverse readings. The image can offer aesthetic enjoyment and relevant information to botanists, geologists, mineralogists, and meteorologists. This is because there are plants, landscapes, cloud formations, geological profiles, villages, an inter-Andean valley, an eastern mountain range, multiple signs that show the climate, vegetation, location, and social and productive activities that are carried out with plants and natural resources in general. In addition, it tells a sociological and political story related to Cargueros who work with travelers and who stage a series of socual oppositions and complexities typical of the mountainous Andean world, colonial society, and global society in aprocess of transformation. In the image we see a Carguero who stares at the viewer while walking with his empty chair, probably the one that should have been occupied by Humboldt, who refused to use the service. In this sense, it could be said that the image is a 'picture or scene of nature' which presents a careful organization of the landscape so that various natural and cultural phenomena interact and account for organic functioning.",
+    "options": [
+      { "btn": "Back to main route", "scene": "pack1750_1810"},
+      { "btn": "Humboldt as source model", "scene": "humboldtPack"}
+    ],
+    "areas": [
+      { "x": 907, "y": 660, "w": 316, "h": 474, "btn": "", "tooltip": "", "scene": "villanero" },
+      { "x": 1225, "y": 619, "w": 273, "h": 547, "btn": "", "tooltip": "", "scene": "agave" },
+      { "x": 615, "y": 342, "w": 727, "h": 453, "btn": "", "tooltip": "", "scene": "humboldtPack" }
+    ]
+  },
+  "villanero": {
+    "meta": 122,
+    "options": [  { "btn": "Back to main route", "scene": "pack1750_1810"} ],
+    "areas": [ { "x": 157, "y": 242, "w": 120, "h": 154, "btn": "", "tooltip": "", "scene": "bijao" } ]   
+  },
+  "bijao": {
+    "meta": 119,
+    "text": "The Cargueros act as guides and make it possible to cross the difficult path, not only because of their physical strength, but also because of the knowledge they have of the landscape they inhabit. They know the signs of the terrain, climate, and usefulness of plants. The same Carguero, the one in the image that stares at the viewer and has an empty chair, carries in his hands some bijao leaves that, the story tells us, will later be used to make tents and shelter from the rain.Humboldt draws the bijao leaves in his diary",
+    "options": [ { "btn": "Back to main route", "scene": "pack1750_1810"} ]
+  },
+  "agave": {
+    "meta": 120,
+    "text": "There is a flowering Fique or Agave on the right side of the Plate V of Vues. This plant is used for the elaboration of ropes that tie the Bijao leaves and secure the tents. In Humboltd's diaries, there are drawings of the tents specifying how to tie them so that they are resistant. In the story, these plants are considered regarding their geographical location in relation to altitude, taxonomically by being categorized into families and species, and by their usefulness by speculating about their industrial applications.",
+    "options": [ { "btn": "Back to main route", "scene": "pack1750_1810"} ]
+  },
+  "humboldtPack": {
+    "viz":{ "filter": [ ["modelo", "=", "humboldt"], ["otros", "=", "false"] ], "type": "pack", "x": "modelo", "y": "modelo"},
+    "title": "Humboldt as source model", "text": "",
+    "options": [ { "btn": "Back to main route", "scene": "pack1750_1810"} ]
+  },
+  "scatterRoulin": {
+    "viz": {"filter": [ ["fecha", "<", 1900], ["otros", "=", "false"] ], "type": "scatter", "x": "periodo", "y": "modelo"},
+    "title": "Source model vs. Period",
+    "text": "As seen in this panel the most used model during the period '1819 – 1850' was Roulin’s...",
+     "options": [ { "btn": "Continue main route", "scene": "packRoulin" } ]
+  },
+  "packRoulin": {
+    "viz": {"filter": [ ["fecha", "<", 1900], ["periodo", "=", "1819 - 1850"], ["otros", "=", "false"] ], "type": "pack", "x": "periodo", "y": "modelo"},
+    "title": "Source model in the 1819 - 1850 period",
+    "text": "As an alternate visualisation, Roulin's predominance can also be seen in this hierarchichal disposition of source models in the 1819 - 1850 period.",
+    "options": [ { "btn": "Continue main route", "scene": "packHumboldtPeriodo" } ]
+  },
+  "packHumboldtPeriodo": {
+    "viz": {"filter": [ ["fecha", "<", 1900], ["otros", "=", "false"], ["modelo", "=", "humboldt"] ], "type": "pack", "x": "periodo", "y": "figura/fondo"},
+    "title": "Humboldt's Figure/Background and Periods",
+    "text": "This panel shows that, in the '1819-1850' period, some of the images that used Humboldt’s image as a model turned the landscape into 'figures' (figura), that is, gave preponderance to the lanscape instead of the characters, and some even took the figures out and turned the images into pure landscape representations, that is, 'background' or (fondo)",
+    "options": [ { "btn": "Continue main route", "scene": "roulinHumboldt" } ]      
+  },
+  "roulinHumboldt": {
+    "viz": { "filter":[], "type": "compare", "x": 6, "y": 11 },
+    "title": "Second Comparison between Humboldt's and Roulin's Carguero images",
+    "text": "In general, Roulin's is the most used model, although all travelers quote Humboldt as a reference for the description of the Cargueros, they do not use his image as a reference. This comparison panel shows the evident differences in composition for both models. While Humboldt's image highlights the Carguero as part of the landscape, Roulin’s highlights its bodily features.",
+    "options": [ { "btn": "Continue main route", "scene": "roulinModel" } ]
+  },
+  "roulinModel": {
+    "viz": { "filter": [ ["fecha", "<", 1900], ["modelo", "=", "roulin"], ["otros", "=", "false"] ], "type": "pack", "x": "modelo", "y": "soporte"},
+    "title": "Material substrates of Roulin's derivations",
+    "text": "Here we can observe the great diversity of media in which this model circulated, adapted by communities of interpretation that demanded new epistemic and aesthetic criteria of validity.",
+    "options": [
+      { "btn": "Practices of image circulation", "scene": "circulationInscription" },
+      { "btn": "Animal and Human types", "scene": "animalHumanTypes" },
+      { "btn": "Continue main route", "scene": "roulinQuindio"}
+    ]
+  },
+  "circulationInscription": {
+    "viz": { "filter":[], "type": "compare", "x": "166", "y": "167" },
+    "title": "Techniques of inscription and practices of image circulation",
+    "text":"The drawings and images made by Roulin participated in a network of image circulation of 19th century visual culture, which involved the rationalization of production, division of labor, and mass production for a market of travelers who were interested in these products. And throughout the twentieth century, and even today, these images have been predominantly seen as visual testimonies of the early republic and, as such, have been integrated into narratives of nation building. The images share a series of iconographic coincidences that indicate the practice of adapting models to different contexts by means of details, such as the background, tools, clothing, costumes, and other elements that vary between compositions. These practices show 'multiple authorship' and 'multiple originals' in the postcolonial Hispanic space. An eloquent case is the correspondence and contrast between the plate 'Taking chocolate in Bogotá', from Joseph Brown's collection, and the plate 'Caballero tomando Té', from the 'De Santiago a Mendoza' collection attributed to Alphonse Giast. The characters are in similar positions, but their clothing, hairstyles, skin complexion, watercolor background, and distribution of surrounding elements change from one image to another. One of the most interesting elements of the contrast is the identification of a 'bombilla' for drinking mate on the table in the background of the watercolor attributed to Giast, a practice characteristic of Chile and Argentina that, on the contrary, was not carried out in Nueva Granada.",
+    "options": [ { "btn": "Roulin's hypothetical album", "scene": "roulinAlbum"} ]
+  },
+  "roulinAlbum": {
+    "meta": 165,
+    "title": "Roulin's hypothetical album",
+    "text": "The 'De Santiago to Mendoza collection' coincides with some of Roulin's models. One example, among other possible ones, is the plate 'Mujer con balde' from the Chilean collection, which shows in the foreground a character derived from the the background of Roulin's watercolor 'Place de St. Victorin, à Bogota'. In addition, the composition of the space is different, a different perspective with coinciding elements. Roulin's prominence in the visual culture of the early Republican period is extended. For example, Auguste Le Moyne copied the profile of Simón Bolívar drawn by Roulin in 1828; his watercolors were copied and published in the travelogues of Gaspar Mollien (1824), John Potter Hamilton (1827), Guilaume Lallement (1826), Alcide D'Orbigny (1841) and M. A. de Latrre (1848). Modifications of his motifs can also be found in engravings by John Potter Hamilton (1827, 1993), Gaetano Osculati (1954), and Cesar Famin (1837). Thus, is is possible that Roulin may have had a catalogue of plates at the service of travelers with scenes of customs, types, views, and monuments.",
+    "options": [ { "btn": "Back to main route", "scene": "roulinModel"} ],
+    "areas": [
+      { "x": 199, "y": 350, "w": 156, "h": 283, "btn": "", "tooltip": "", "name": "mujer", "scene": "roulinPlaza" },
+      { "x": 303, "y": 339, "w": 154, "h": 137, "btn": "", "tooltip": "", "name": "area", "scene": "roulinPlaza" }
+    ]
+  },
+  "roulinPlaza": {
+    "meta": 154,
+    "options": [
+      { "btn": "Back to Roulin's hypothetical album", "scene": "roulinAlbum"},
+      { "btn": "To Costumes/Colombie", "scene": "costumesColombie"}
+    ],
+    "areas": [
+      { "x": 400, "y": 762, "w": 152, "h": 276, "btn": "", "tooltip": "", "name": "cargando", "escena": "agachado" },
+      { "x": 586, "y": 708, "w": 140, "h": 152, "btn": "", "tooltip": "", "name": "agachado", "escena": "agachado" },
+      { "x": 748, "y": 653, "w": 104, "h": 178, "btn": "", "tooltip": "", "name": "mujerConBalde", "escena": "roulinAlbum" },
+      { "x": 382, "y": 439, "w": 400, "h": 350, "btn": "", "tooltip": "", "name": "fuente", "escena": "roulinAlbum"  },
+      { "x": 1075, "y": 838, "w": 258, "h": 204, "btn": "", "tooltip": "", "escena": "perro" } 
+    ]
+  },
+  "animalHumanTypes": {
+    "viz": {"filter": [ ["modelo", "=", "roulin"], ["genero", "=", "tipos animales"] ], "type": "pack", "x": "modelo", "y": "genero"},
+    "title": "Roulin's Animal types",
+    "text": "In relation to the aesthetic and scientific conditions of acceptability, Roulin's conceptual and visual universe is directly related to his scientific training as a physiologist practicing comparative anatomy in the scientific circle of the Academy of Natural Sciences in Paris. He published some of the results of his research in the Annales des Sciences Naturelles and participated in the edition of Le Règne Animal created by Cuvier's disciples in 1836. Roulin's watercolors and drawings show his interest in highlighting aspects related to the animal and human classification that had been postulated in his scientific circle, which, from a visual point of view, sought to establish relationships between external characters, with the systematic functioning of internal organs. This panel shows the animal types represented in a publication on the Tapir in the Annals of Natural Science and some drawings found in Roulin's notebooks. <img src='https://lh3.googleusercontent.com/d/18XgsbcnSER4Y2z1dxNErwKX6pwV8fZt_'>The tapir was drawn from the carcasses of a pair of specimens found in Sumapaz páramo, near Bogotá. He had to content himself with making an abbreviated description on the spot, and drawing a simple line in pencil. A Wollaston camera-lucida helped him to draw the outline of the head. In this way, Roulin completed a series of drawings that were placed before the eyes of the academy when attached to his memoir published in the Annales des Sciences Naturelles",
+    "options": [
+      { "btn": "Back to main route", "scene": "roulinModel"},
+      { "btn": "Roulin's Human types", "scene": "roulinHuman"},
+      { "btn": "Detour through Roulin's dogs", "scene": "perro" }
+    ]
+  },
+  "perro": {
+    "meta": 192,
+    "text": "Roulin also published a memoir in the Annales des Sciences Naturelles in 1829 about domestic animals brought from Europe to the New World. Some of the watercolors, found in 2003, can be interpreted in relation to this publication. The watercolor 'Bords de la Magdelaine. Ménage d'une famille de pêcheur' of 1823 seems to be an illustration of the text in which it is mentioned that the 'dogs of hot climate (perros de tierra caliente)' that live with the fishermen on the banks of the Magdalena River, have a deteriorated breed due to lack of food and exceptional conditions that force the animals to return to wild states. In Roulin's Plates, such as 'Bords de la Magdelaine', 'Place de St. Victorin à Bogotá' or 'Entrée du marché de Honda', dogs can be seen living side by side with humans in different climates and regions. This allows us to see how dogs have changed and adapted to different environments and situations, and how they have been affected by the communities in which they live. Ultimately, Roulin's watercolors, in conjunction with his written memoir, offer valuable insights into changes in domestic animals and their relationship to climates and communities in the New World.",
+    "options": [
+      { "btn": "Back to Roulin's hipotetic album", "scene": "roulinAlbum"},
+      { "btn": "Back to Costumes/Colombie", "scene": "costumesColombie"}
+    ],
+    "areas": [
+      { "x": 473, "y": 205, "w": 348, "h": 249, "btn": "", "tooltip": "", "scene": "perro1" },
+      { "x": 305, "y": 569, "w": 338, "h": 304, "btn": "", "tooltip": "", "scene": "roulinPlaza" },
+      { "x": 368, "y": 1006, "w": 343, "h": 276, "btn": "", "tooltip": "", "scene": "roulinMayor" },
+      { "x": 858, "y": 982, "w": 338, "h": 205, "btn": "", "tooltip": "", "scene": "perro4" },
+      { "x": 1334, "y": 983, "w": 388, "h": 257, "btn": "", "tooltip": "", "scene": "roulinMayor" },
+      { "x": 1327, "y": 610, "w": 385, "h": 252, "btn": "", "tooltip": "", "scene": "perro6" },
+      { "x": 1344, "y": 261, "w": 361, "h": 257, "btn": "", "tooltip": "", "scene": "perro7" },
+      { "x": 802, "y": 587, "w": 499, "h": 398, "btn": "", "tooltip": "", "scene": "bordes" }
+    ]
+  },
+  "bordes": { "meta": 146 }, "perro1": { "meta": 156 }, "perro7": { "meta": 148 }, "perro4": { "meta": 149 }, "perro6": { "meta": 159 },
+  "roulinMayor": {
+    "meta": 153,
+    "options": [
+      { "btn": "Back to Roulin's hypothetical album", "scene": "roulinAlbum"}
+    ],
+    "areas": [
+      { "x": 477, "y": 575, "w": 121, "h": 325, "btn": "", "tooltip": "", "scene": "mujerSombrero" },
+      { "x": 894, "y": 695, "w": 215, "h": 465, "btn": "", "tooltip": "", "scene": "sacerdote" },
+      { "x": 133, "y": 850, "w": 169, "h": 139, "btn": "", "tooltip": "", "scene": "perro" },
+      { "x": 1123, "y": 639, "w": 157, "h": 117, "btn": "", "tooltip": "", "scene": "perro" }
+    ]  
+  },
+  "roulinHuman": {
+    "viz": {"filter":[ ["modelo", "=", "cuvier"] ], "type": "pack", "x": "modelo", "y": "modelo" },
+    "title": "Roulin's Human types",
+    "text": "In the specific classification of the human race as a bipedal mammal, Cuvier considered that its development was determined by external aspects, such as climate or geography, and internal aspects, such as the intellectual characteristics of the races. These were organized in a hierarchy that descended from the Caucasian race to the Ethiopian, which was represented as the least developed. The position of Americans in this classification was uncertain, since it was not possible to resolve the multiplicity of characteristics observed in the same category. In fact, Roulin drew from Cuvier’s disciples edition of Le Règne Animal some of the plates of American types that illustrate their difficult classification, and is cited as one of the travellers who provided information on the subject.",
+    "options": [
+      { "btn": "Comparision between Roulin's Animal Kingdom plate and a watercolour plate", "scene": "types" },
+      { "btn": "To Costumes/Colombie", "scene": "costumesColombie"},
+      { "btn": "Back to main route", "scene": "roulinModel"}
+    ]
+  },
+  "types": {
+    "viz": {"filter": [[]], "type": "compare", "x": "138", "y": "143"},
+    "title": "Comparision between Roulin's Animal Kingdom plate and a watercolour plate",
+    "text": "Roulin's training in physiology and comparative anatomy allowed him to direct his gaze towards aspects other than landscapes, focusing on the study of anatomy, races, and how environmental factors affect organisms. One of Roulin's watercolors can serve as an illustration: 'Bords de la Magdelaine. Le bal du petit ange' (Banks of the Magdalena. The little angel's dance). The image shows the funeral ritual of the inhabitants of the banks of the Magdalena River. There is a crowd circle animating the dance of two Afro-American people in the center. Both subjects had darker skin color and characteristics that could be imputed to the race Cuvier calls 'Ethiopian,' such as curly hair. On the other hand, the subjects in the crowd cheering with palms and instruments have some of the characteristics given by Cuvier to the indeterminate American race, such as straight hair and 'copper red' skin color.",
+    "options": [ { "btn": "Back to main route", "scene": "roulinModel"} ]
+  },
+  "roulinQuindio": {
+    "viz": {"filter": [[]], "type": "compare", "x": "11", "y": "22"},
+    "title": "Roulin, d'Orbigny and the category of 'type'.",
+    "text": "The sketch of the camp on the Quindío road was reproduced in the biography of Roulin, along with several other sketches, published by Marguerite Combes in 1929. The drawing shows a camp in which a Carguero can be seen at the center of the composition. According to Combes, the man with an open umbrella being loaded is a notary who accompanied Roulin and Boussigault on the mission to inspect and draw up the plan of the mines of La Vega de Supía. Combes mistakenly states that the subject in the lower right is Boussingault. Roulin makes a direct reference to this drawing in a footnote in an article on the Tapir in his collection of scientific papers called 'Histoire naturelle et souvenirs de voyage' of 1865. Roulin made this drawing on behalf of Humboldt. Roulin’s sketch of the Carguero was modified and turned into an engraving in Alcide d'Orbigny's travelogue, 'Voyage Pittoresque dans les deux Amériques', a popular book that contributed significantly to the dissemination of knowledge of Colombia in Europe. D'Orbigny, a mollusk specialist, belonged to the same scientific circle as Cuvier and Roulin. Like the latter, he was credited as a 'disciple' in the 1836 edition of Le Règne Animal. In fact, his figure plays a fundamental role in research on the determination of the racial characteristics of Americans for Cuvier's classification of that book. In 1825, he was commissioned by the Museum of Natural History in Paris to investigate 'in depth the language and physiological characteristics' of South American people. As an analytical tool, Roulin and d'Ornigny helped transpose, from the comparative anatomy of animals, the category of 'type' to find a way to organize the multiplicity of human populations existing in America. In this sense, Roulin's and d'Orbigny's Carguero drawings can be interpreted as an investigation into a 'social type' that existed because of specific climatic, geographical, and racial features. These are rationalized by the observations of the external characters and their relations with internal organic functioning. Roulin refers to the Carguero as a 'human mount', hinting at a comparison of different modes of transportation and uses of human and animal muscle-driven motion power.",
+    "options": [ { "btn": "Continue route", "scene": "roulinHamilton"} ]
+  },
+  "roulinHamilton": {
+    "viz": {"filter": [[]], "type": "compare", "x": "11", "y": "14"},
+    "title": "Hamilton Picturesque Carguero",
+    "text": "A derivation of Roulin's model of the Carguero is found in the travelogue of the British Diplomat Colonel John Potter Hamilton, the first official envoy on behalf of the British government to Colombia. After returning to his homeland, he published his travelogue with the famous publishing house John Murray. This publishing house was noted, among other things, for tapping into the demand for such products, and published more than 200 travel books during the first half of the 19th century. Hamilton used, with adaptations, several of Roulin's models in his book. In particular, the image of the Carguero changes the direction of the characters and places them on a laborious ascent. They climb around a tree on the curve of a steep mountain road (see graphical comparison). The image is similar to other images of the period, like those in the travelogues of British merchant traveller Charles Stuart Cochrane and Swedish diplomatic traveller August Gosselman. These images are characterized by the use of a picturesque aesthetic as a strategy to frame the landscape and recompose it with industrious human figures, settlements, crops, and productive animals, in contrast to the untamed wilderness that still needs to be controlled by man. In these stories, the images coexist with visual metaphors that frame the observations of nature as 'pictures', 'paintings', 'drawings', 'sketches', 'maps', 'scenery', 'beautiful shows', 'dioramas', 'panoramas', 'magic lanterns' or 'Peep Shows'. The use of the Carguero image is indicative of the resignification of picturesque aesthetics in the voyages to America, characterized by the use of ethnographic and social themes of concern to travellers of the period, who were, in Mary Louis Pratt's words, the avant-garde of capitalism.",
+    "options": [ { "btn": "To Costumes/Colombie", "scene": "costumesColombie"} ]
+  },
+  "costumesColombie": {
+    "meta": 21,
+    "title": "Costumes/Colombie",
+    "text": "Through Hamilton's Carguero, Roulin's model found its way into the volume on Colombia of the monumental 67-volume encyclopedic Collection: L'Univers Pittoresque. The cabinet traveller César Famin arranged on a generic natural background a set of figures that mixed the costumes of Colombia and Guyana. The Collection: L'Univers Pittoresque, in which Famin participated, and d'Orbigny's Voyage pittoresque, are examples of how, in France, the 'picturesque' was understood as a publishing guideline; a way of making books and periodicals, richly illustrated and with complex logistical processes.  The books and images of the travellers are used as privileged sources of information for these encyclopedic projects with pretensions of synthesis. An image of the Carguero is representative of this procedure. It does not pretend to be a faithful representation of nature, but rather constructs a generic exoticizing space that synthesizes Famin's entire journey through Guyana and Colombia. Different human types and their costumes are arranged in juxtaposition to establish comparisons and contrasts between them. In this way, the pretension of travel books to bring distant geography closer, so that it can be experienced without leaving home, is realized and replicated with cabinet travels.",
+    "options": [
+      { "btn": "Back to Roulin's hypothetical album", "scene": "roulinAlbum"},
+      { "btn": "Continue route", "scene": "roulinPrensa" }
+    ],
+    "areas": [
+      { "x": 222, "y": 176, "w": 126, "h": 345, "btn": "", "tooltip": "", "scene": "colgadaBlake" },
+      { "x": 74, "y": 723, "w": 155, "h": 568, "btn": "", "tooltip": "", "scene": "sacerdote" },
+      { "x": 239, "y": 712, "w": 205, "h": 306, "btn": "", "tooltip": "",  "scene": "agachado" },
+      { "x": 333, "y": 652, "w": 212, "h": 448, "btn": "", "tooltip": "", "scene": "cargandoNino" },
+      { "x": 583, "y": 386, "w": 362, "h": 603, "btn": "", "tooltip": "", "scene": "carguero" },
+      { "x": 851, "y": 674, "w": 360, "h": 684, "btn": "", "tooltip": "", "scene": "plantadorSurinam" },
+      { "x": 1065, "y": 549, "w": 216, "h": 566, "btn": "", "tooltip": "", "scene": "mujerSombrero" },
+      { "x": 1238, "y": 633, "w": 448, "h": 708, "btn": "", "tooltip": "", "scene": "familia" },
+      { "x": 1484, "y": 328, "w": 233,  "h": 522, "btn": "", "tooltip": "", "scene": "colgado" },
+      { "x": 1498, "y": 697, "w": 201, "h": 609, "btn": "", "tooltip": "", "scene": "mujerConPajaro"}
+    ]
+  },
+  "colgadaBlake": { "meta": 186 },
+  "sacerdote": {
+    "meta": 181, "areas": [ { "x": 112, "y": 383, "w": 150, "h": 440, "btn": "", "tooltip": "", "scene": "roulinMayor" } ]    
+  },
+  "agachado": {
+    "meta": 180,
+    "areas": [
+      { "x": 109, "y": 294, "w": 195, "h": 376, "btn": "", "tooltip": "", "scene": "roulinPlaza" },
+      { "x": 245, "y": 382, "w": 136, "h": 229, "btn": "", "tooltip": "", "scene": "roulinPlaza" }
+    ]
+  },
+  "cargandoNino": { "meta": 178 },
+  "carguero": {
+    "meta": 14, "areas": [ { "x": 549, "y": 876, "w": 276, "h": 426, "btn": "", "tooltip": "", "scene": "cargueroRoulin" } ]
+  },
+  "cargueroRoulin": { "meta": 11 }, "plantadorSurinam": { "meta": 187 },
+  "mujerSombrero": {
+    "meta": 179, "areas": [ { "x": 315, "y": 441, "w": 150, "h": 447, "btn": "", "tooltip": "", "scene": "roulinMayor" } ]
+  },
+  "roulinPrensa": {
+    "viz": {"filter": [ ["modelo", "=", "roulin"], ["soporte", "=", "prensa"] ], "type": "pack", "x": "modelo", "y": "soporte"},
+    "title": "The Carguero in the European illustrated press",
+    "text": "By removing the figure from the background, A. de Lattre used the Carguero to contrast the practice of the Quindío road with the estiveros of Putumayo. From this source, the image was put on an engraving plate, and was used in mass-printing projects in Europe by various illustrated press companies in countries such as France (Magasin Pittoresque, 1848), Spain (Semanario Pintoresco Español, 1849) and Germany (Das Pfennig-Magazin, 1851). These magazines were local versions of The Penny Magazine, first published in the United Kingdom in 1832 by the Society for the dissemination of useful knowledge. The model of this weekly magazine soon spread to various parts of Europe, disseminating not only the format of a publication, but technological applications of woodcutting and prototyping, a process of rationalization of print production, a business model and an ideal of the correlation between the expansion of the readership market and the possibility of bringing access to 'useful' knowledge to the working classes. Magasin Pittoresque, for example, was first published by Édouard Charton in 1833 and is associated with a faction of saintsimonism called 'republican saintsimonism'. Charton expressly referred to his publishing projects as means by which he intended to 'combat the ignorance of the popular classes' (Le Magasin Pittoresque, 1833, p. 98). Dissemination was made possible by the recent invention of metal plate engraving processes useful to obtain copies in 'hundreds of thousands' (Le Magasin Pittoresque, 1833, p. 98). In this context, images reached a wider public and offered a quicker and more fun way of learning from which children would benefit: 'instead of letting them sleep or yawn over a book, take them often to museums, or even to boulevards, georamas and panoramas' (Le Magasin Pittoresque, 1833, p. 99). Likewise, in the Semanario Pintoresco Español, images are mentioned for their function of 'representing absent things as if they were before us and which we could only see at the cost of arduous journeys and great expense’ (Semanario Pintoresco Español, 1844, p. 48).",
+    "options": [ { "btn": "Start over", "scene": "start"} ]
+  },
+  "familia": { "meta": 183 }, "mujerConPajaro": { "meta": 184 }, "colgado": { "meta": 185 }
+}
