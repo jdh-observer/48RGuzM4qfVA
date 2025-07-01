@@ -573,7 +573,7 @@ One additional, important aspect of this method for creating interactive panels 
 Following all the steps explained before, we designed a JavaScript object that describes a set of scenes for our interactive panels. This scenes object is then processed by our custom functions to “hydrate” it, that is, to add the additional information that Aventura.js requires for  rendering the panels: filtering the dataset, constructing the visualisations, creating individual scenes that display links and metadata of each element in the collection.
 <!-- #endregion -->
 
-```python jdh={"module": "object", "object": {"source": ["Interactive panels"]}}  tags=["figure-observable-*", "h-1600px"]
+```python jdh={"module": "object", "object": {"source": ["Interactive panels"]}} tags=["figure-observable-*", "h-1600px"]
 from IPython.display import IFrame
 IFrame('https://observablehq.com/embed/@aventura-interactiva-ws/interactive_carguero_atlas?cells=panelContainer%2CpanelFromScenes%2Cscenes',width='100%', height='800')
 ```
