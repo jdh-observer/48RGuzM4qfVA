@@ -574,11 +574,8 @@ Following all the steps explained before, we designed a JavaScript object that d
 <!-- #endregion -->
 
 ```python jdh={"module": "object", "object": {"source": ["Interactive panels"]}} tags=["figure-observable-*"]
-# Process the scenes and render the interactive atlas (it might a couple of seconds to render)
-embed('@aventura-interactiva-ws/interactive_carguero_atlas',
-      cells=['panelContainer', 'processedScenes'],
-      inputs={'csvString': data_csv, 'scenes': scenes}
-     )
+from IPython.display import IFrame
+IFrame('https://observablehq.com/embed/@aventura-interactiva-ws/interactive_carguero_atlas?cells=panelContainer%2CpanelFromScenes%2Cscenes',width='100%', height='800')
 ```
 
 ## A guided tour of the Carguero Atlas: the path of Humboldt and Roulin
